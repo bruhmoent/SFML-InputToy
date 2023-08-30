@@ -4,6 +4,7 @@
 #ifndef CONTROLLER_MANAGER_HPP
 #define CONTROLLER_MANAGER_HPP
 
+// NOTE: Example XBOX definition, not sure how to tackle global definitions.
 enum Button {
     JOY_KEY_A = 0,  // A button
     JOY_KEY_B = 1,  // B button
@@ -20,17 +21,17 @@ enum Button {
 class ControllerManager
 {
 public:
-	ControllerManager();
+    ControllerManager();
 
-	void bind_axis_to_action(unsigned int c_index, sf::Joystick::Axis axis, Action negative_action, Action positive_action);
-	void bind_button_to_action(unsigned int c_index, Button button, Action action);
+    void bind_axis_to_action(unsigned int c_index, sf::Joystick::Axis axis, Action negative_action, Action positive_action);
+    void bind_button_to_action(unsigned int c_index, Button button, Action action);
 
-	bool is_action_activated(Action action, unsigned int c_index);
-	bool is_action_released(Action action, unsigned int c_index);
+    bool is_action_activated(Action action, unsigned int c_index);
+    bool is_action_released(Action action, unsigned int c_index);
 
 private:
-	std::map<unsigned int, std::map<sf::Joystick::Axis, std::pair<Action, Action>>> m_axis_map;
-	std::map<unsigned int, std::map<Button, Action>> m_button_map;
+    std::map<unsigned int, std::map<sf::Joystick::Axis, std::pair<Action, Action>>> m_axis_map;
+    std::map<unsigned int, std::map<Button, Action>> m_button_map;
     std::map <Button, bool> m_button_state_map;
 };
 
