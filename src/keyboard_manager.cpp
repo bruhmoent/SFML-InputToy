@@ -7,7 +7,7 @@ KeyboardManager::KeyboardManager() : m_keymap()
 	m_keymap[sf::Keyboard::Right] = Action::RIGHT;
 	m_keymap[sf::Keyboard::Up] = Action::UP;
 	m_keymap[sf::Keyboard::Down] = Action::DOWN;
-    m_keymap[sf::Keyboard::Space] = Action::JUMP;
+   	m_keymap[sf::Keyboard::Space] = Action::JUMP;
 }
 
 bool KeyboardManager::is_action_activated(Action& action)
