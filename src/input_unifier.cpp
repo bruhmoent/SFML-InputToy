@@ -17,35 +17,3 @@ bool InputUnifier::is_action_released(Action action)
         return true;
     return false;
 }
-
-
-/*
-bool InputUnifier::is_action_activated(Action action)
-{
-    if (m_keyboard_manager->is_action_activated(action))
-        return true;
-    return false;
-}
-
-bool InputUnifier::is_action_released(Action action)
-{
-    if (m_keyboard_manager->is_action_released(action))
-        return true;
-    return false;
-}
-*/
-/*
-bool InputUnifier::is_action_activated(Action action)
-{
-    if (m_controller_manager->is_action_activated(action, 1))
-        return true;
-    return false;
-}
-
-bool InputUnifier::is_action_released(Action action)
-{
-    if (m_controller_manager->is_action_released(action, 1))
-        return true;
-    return false;
-}
-*/
