@@ -18,4 +18,4 @@ private:
     std::unique_ptr<ControllerManager> m_controller_manager;
 };
 
-#endif // !CONTROLLER_MANAGER_HPP
+#endif // !INPUT_UNIFIER_HPP
