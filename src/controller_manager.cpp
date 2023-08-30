@@ -3,6 +3,7 @@
 const float S_AXIS_THRESHOLD = 30.0f;
 
 ControllerManager::ControllerManager() : m_axis_map(), m_button_map() {
+    // Assign default mappings.
     bind_axis_to_action(1, sf::Joystick::X, Action::LEFT, Action::RIGHT);
     bind_axis_to_action(1, sf::Joystick::Y, Action::UP, Action::DOWN);
     bind_button_to_action(1, Button::JOY_KEY_A, Action::JUMP);
