@@ -12,4 +12,4 @@ enum class Action {
 	JUMP
 };
 
-#endif // !KEYBOARD_DEFINITION_HPP
+#endif // !ACTION_DICT_HPP
