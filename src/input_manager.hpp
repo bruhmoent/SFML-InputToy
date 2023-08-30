@@ -10,11 +10,11 @@ class KeyboardManager;
 class InputManager
 {
 public:
-	InputManager();
-	std::unique_ptr<InputUnifier> m_input_unifier;
+    InputManager();
+    std::unique_ptr<InputUnifier> m_input_unifier;
 
-	bool is_action_activated(Action action);
-	bool is_action_released(Action action);
+    bool is_action_activated(Action action);
+    bool is_action_released(Action action);
 };
 
 #endif // !INPUT_MANAGER_HPP
